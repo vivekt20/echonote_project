@@ -42,14 +42,17 @@ List<String> items = [];
 
         }, icon: Icon(Icons.arrow_back)),
         title: Text("Add New list",style: TextStyle(color: Colors.white,fontSize: 20,fontWeight: FontWeight.bold),),
-        actions: [Icon(Icons.check,
+        actions: [IconButton(onPressed: (){
+          Navigator.push(context, MaterialPageRoute(builder: (BuildContext context)=>Echonote()));
+        }, icon: Icon(Icons.check))
         
-        color: Colors.white,),
+        
+      ]),
         
         
-        ],
         
-      ),
+        
+      
       body: Padding(
         padding: const EdgeInsets.all(15.0),
         child: Column(

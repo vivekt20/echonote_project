@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class TaskScreen extends StatefulWidget{
+class ListScreen extends StatefulWidget{
   @override
-  State<TaskScreen> createState()=> _TaskScreenState();
+  State<ListScreen> createState()=> _ListScreenState();
 }
-class  _TaskScreenState  extends State<TaskScreen>{
+class  _ListScreenState  extends State<ListScreen>{
   @override
   Widget build(BuildContext context){
     return Scaffold(
@@ -18,7 +18,7 @@ class  _TaskScreenState  extends State<TaskScreen>{
         height: 100,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15),
-          color: Colors.blue,
+          color: Colors.yellow[100],
           
         ),
         child: Padding(padding: EdgeInsets.all(15.0),
